@@ -1,43 +1,51 @@
 {
-  "name": "temperature-average",
-  "version": "0.0.0",
-  "description": "",
-  "main": "lib/index.js",
-  "module": "src/index.js",
-  "files": [
-    "lib",
-    "src"
-  ],
-  "scripts": {
-    "eslint": "eslint src",
-    "eslint-fix": "npm run eslint -- --fix",
-    "prepack": "rollup -c",
-    "prettier": "prettier --check src",
-    "prettier-write": "prettier --write src",
-    "test": "npm run test-only && npm run eslint && npm run prettier",
-    "test-only": "jest --coverage"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cheminfo/temperature-average.git"
-  },
-  "keywords": [],
-  "author": "EscapedGibbon",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cheminfo/temperature-average/issues"
-  },
-  "homepage": "https://github.com/cheminfo/temperature-average#readme",
-  "jest": {
-    "testEnvironment": "node"
-  },
-  "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
-    "@types/jest": "^27.5.0",
-    "eslint": "^8.14.0",
-    "eslint-config-cheminfo": "^7.3.0",
-    "jest": "^28.0.3",
-    "prettier": "^2.6.2",
-    "rollup": "^2.72.0"
-  }
+	"name": "temperature-average",
+	"version": "0.0.0",
+	"description": "",
+	"main": "lib/index.js",
+	"module": "src/index.js",
+	"files": [
+		"lib",
+		"src"
+	],
+	"scripts": {
+		"eslint": "eslint src",
+		"eslint-fix": "npm run eslint -- --fix",
+		"prepack": "rollup -c",
+		"prettier": "prettier --check src",
+		"prettier-write": "prettier --write src",
+		"test": "npm run test-only && npm run eslint && npm run prettier",
+		"test-only": "jest --coverage",
+		"start": "node --experimental-json-modules ./src/index.mjs",
+		"db": "node ./src/sample.mjs"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cheminfo/temperature-average.git"
+	},
+	"keywords": [],
+	"author": "EscapedGibbon",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/cheminfo/temperature-average/issues"
+	},
+	"homepage": "https://github.com/cheminfo/temperature-average#readme",
+	"jest": {
+		"testEnvironment": "node"
+	},
+	"devDependencies": {
+		"@babel/plugin-transform-modules-commonjs": "^7.18.2",
+		"@types/jest": "^27.5.0",
+		"eslint": "^8.14.0",
+		"eslint-config-cheminfo": "^7.3.0",
+		"jest": "^28.0.3",
+		"prettier": "^2.6.2",
+		"rollup": "^2.72.0"
+	},
+	"dependencies": {
+		"better-sqlite3": "^7.6.0",
+		"config": "^3.3.7",
+		"delay": "^5.0.0",
+		"sqlite3": "^5.0.8"
+	}
 }
