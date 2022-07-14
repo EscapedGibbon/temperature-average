@@ -16,8 +16,8 @@
 		"prettier-write": "prettier --write src",
 		"test": "npm run test-only && npm run eslint && npm run prettier",
 		"test-only": "jest --coverage",
-		"start": "node --experimental-json-modules ./src/index.mjs",
-		"db": "node ./src/sample.mjs"
+		"start": "node --experimental-json-modules ./src/doAll.mjs",
+		"db": "node ./src/insertData.mjs"
 	},
 	"repository": {
 		"type": "git",
