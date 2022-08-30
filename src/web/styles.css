@@ -1,0 +1,39 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: block;
+}
+.container_navbar {
+  display: block;
+  align-items: center;
+}
+.container_navbar_listmember {
+  background-color: beige;
+  list-style: none;
+  padding: 10px 5px;
+  border: none;
+}
+.container_navbar_listmember:hover {
+  border: 1px solid black;
+  color: white;
+  background-color: brown;
+}
+.container_navbar_link {
+  display: block;
+  font-family: sans-serif;
+  font-style: bold;
+  color: brown;
+  font-size: 15px;
+  text-decoration: 0;
+}
+#testing {
+}
