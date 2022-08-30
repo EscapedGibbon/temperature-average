@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Data</title>
+  </head>
+  <body>
+    <header>
+      
+      <nav class="container_navbar">
+        <ul class="container_navbar_list">
+          <a class="container_navbar_link" href="/lastValue"><li class="container_navbar_listmember">Last value</li> </a>
+         <a class="container_navbar_link" href="/avgTemp"><li class="container_navbar_listmember">Average overall temperature</li></a>
+         <a class="container_navbar_link" href="/avgPerHour"><li class="container_navbar_listmember">Average temperature per hour</li></a>
+        </ul>
+      
+    </nav></header></div>
+    
+   <main><div id="testing">
+    
+   </div> </main> 
+   <script>
+    async function fetchLastValue(){
+     
+   const response = await fetch('/lastValue')
+   const data = await response.json()
+
+      let area = document.querySelector('#testing');
+      area.innerText=data.temperature; 
+      console.log(data.temperature)
+
+    }
+    fetchLastValue();
+    setInterval(fetchLastValue,30000);   
+    
+   </script>
+  </body>
+</html>
