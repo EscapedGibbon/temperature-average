@@ -2,8 +2,8 @@
   "name": "temperature-average",
   "version": "0.0.0",
   "description": "",
-  "main": "lib/index.js",
-  "module": "src/index.js",
+  "main": "lib/server.js",
+  "module": "src/server.js",
   "files": [
     "lib",
     "src"
