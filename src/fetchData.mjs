@@ -18,7 +18,6 @@ export async function fetchData() {
           await insertData(temp);
           await delay(30 * 1000);
         } catch (err) {
-          console.log(data);
           apiFetch = false;
         }
       });
