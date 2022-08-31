@@ -16,7 +16,7 @@ export async function fetchData() {
           let temp = data.main.temp;
           console.log(temp);
           await insertData(temp);
-          await delay(30 * 1000);
+          await delay(300 * 1000);
         } catch (err) {
           apiFetch = false;
         }
