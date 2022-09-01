@@ -28,6 +28,6 @@ fastify.get('/avgPerHour', (req, res) => {
 
 // Run the server!
 const start = async () => {
-  await fastify.listen({ port: 3000, host: '0.0.0.0' });
+  await fastify.listen({ port: 8000, host: '0.0.0.0' });
 };
 start();
